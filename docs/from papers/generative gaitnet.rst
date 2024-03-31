@@ -88,7 +88,7 @@ Installation (Prerequisites)
     pip install ray==1.8.0
     pip install ray[rllib]==1.8.0
   
-  .. note:: 
+  .. warning:: 
 
     The authors verified the code works on Ray 1.8.0. I tried the latest version of Ray (2.0?) but it seems incompatible with Python 3.6 due to the use of *annotations*.
 
@@ -164,7 +164,7 @@ Follow the instructions in the README.md in the repository.
     cd {downloaded folder}/build
     ./imgui_render/imgui_render ../data/trained_nn/Skeleton ../data/trained_nn/Ankle ../data/trained_nn/Hip ../data/trained_nn/Merge
 
-  .. warning:: 
+  .. error:: 
 
     I ran this part and the renderer crashed after I started the animation by pressing *Space*.
 
@@ -192,7 +192,7 @@ Follow the instructions in the README.md in the repository.
     cd {downloaded folder}/python
     python3 ray_train.py --config=ppo_medium_node
 
-  .. warning:: 
+  .. error:: 
 
     I ran this part but the training didn't start. It seemed that the code is for running on cluster instead of PC. See the warning messages in the following screenshots.
 
