@@ -198,9 +198,11 @@ Follow the instructions in the README.md in the repository.
 
     .. image:: /resources/gaitnet/training_1.png
       :align: center
+      :width: 700
     
     .. image:: /resources/gaitnet/training_2.png
       :align: center
+      :width: 700
 
 * Training (cascading and Subsumption learning):
  
