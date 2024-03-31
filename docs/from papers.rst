@@ -9,5 +9,6 @@ This page shows the code running progress of the following papers:
 
 .. toctree::
     :caption: Contents:
+    :maxdepth: 1
 
     from papers/generative gaitnet

@@ -1,7 +1,9 @@
 Generative GaitNet
 ==================
 
-Reference: J. Park, S. Min, P. S. Chang, J. Lee, M. S. Park, and J. Lee, “Generative GaitNet,” in Special Interest Group on Computer Graphics and Interactive Techniques Conference Proceedings, Vancouver BC Canada: ACM, Aug. 2022, pp. 1–9.
+Reference: [2022GaitNet]_
+
+.. [2022GaitNet] J\. Park, S\. Min, P. S. Chang, J. Lee, M. S. Park, and J. Lee, “Generative GaitNet,” in Special Interest Group on Computer Graphics and Interactive Techniques Conference Proceedings, Vancouver BC Canada: ACM, Aug. 2022, pp. 1–9.
 
 GitHub link: https://github.com/namjohn10/GenerativeGaitNet
 
@@ -90,6 +92,23 @@ Installation (Prerequisites)
 
     The authors verified the code works on Ray 1.8.0. I tried the latest version of Ray (2.0?) but it seems incompatible with Python 3.6 due to the use of *annotations*.
 
+* Install dm_tree
+
+  .. code-block:: bash
+
+    pip install dm_tree
+
+* Install pandas
+
+  .. code-block:: bash
+
+    conda install pandas
+
+* Install IPython
+
+  .. code-block:: bash
+
+    pip install ipython
 
 
 Installation (GaitNet)
@@ -137,6 +156,67 @@ Follow the instructions in the README.md in the repository.
 
       <iframe width="560" height="315" src="https://www.youtube.com/embed/YBSJo4Acv84?si=Gs4mYejnCJgB-Cd6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+* Rendering (with default 4 trained policy to the lower body):
+ 
+  .. code-block::
+
+    source ~/.bashrc
+    cd {downloaded folder}/build
+    ./imgui_render/imgui_render ../data/trained_nn/Skeleton ../data/trained_nn/Ankle ../data/trained_nn/Hip ../data/trained_nn/Merge
+
+  .. warning:: 
+
+    I ran this part and the renderer crashed after I started the animation by pressing *Space*.
+
+    .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/cXz2SlOzqdg?si=NA_X6mfkWp015sdM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+* Rendering (with trained policy):
+ 
+  .. code-block::
+
+    source ~/.bashrc
+    cd {downloaded folder}/build
+    ./imgui_render/imgui_render {network_path}
+  
+  .. note:: 
+
+    I haven't tried this part yet because I wasn't able to run the training. See the following part.
+
+* Training a single policy (cluster setting):
+ 
+  .. code-block::
+
+    source ~/.bashrc
+    cd {downloaded folder}/python
+    python3 ray_train.py --config=ppo_medium_node
+
+  .. warning:: 
+
+    I ran this part but the training didn't start. It seemed that the code is for running on cluster instead of PC. See the warning messages in the following screenshots.
+
+    .. image:: /resources/gaitnet/training_1.png
+      :align: center
+    
+    .. image:: /resources/gaitnet/training_2.png
+      :align: center
+
+* Training (cascading and Subsumption learning):
+ 
+  .. code-block::
+
+    source ~/.bashrc
+    cd {downloaded folder}/python
+    python3 ray_train.py --config=ppo_medium_node --cascading_nn={previous network paths}
+
+  .. note:: 
+    
+    I haven't tried this part yet.
 
 
+.. .. raw:: html
 
+..   <video controls src="./_static/gaitnet/relu and max pooling.mp4" width="620"></video>
+
+.. test

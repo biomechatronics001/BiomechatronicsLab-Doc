@@ -32,12 +32,12 @@
 
 # sys.path.insert(0, os.path.abspath('../'))
 
-project = 'Test'
+project = 'RL Code'
 copyright = '2024, Junxi'
 author = 'Junxi'
 
-release = '0.1'
-version = '0.1.0'
+release = ''
+version = ''
 
 # -- General configuration
 
@@ -48,6 +48,7 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
     'breathe',
+    'sphinx_copybutton',
 ]
 
 intersphinx_mapping = {
@@ -61,6 +62,13 @@ templates_path = ['_templates']
 # -- Options for HTML output
 
 html_theme = 'sphinx_book_theme'
+html_title = "RL Code"
+
+# Add any paths that contain custom static files (such as style sheets) here,
+# relative to this directory. They are copied after the builtin static files,
+# so a file named "default.css" will overwrite the builtin "default.css".
+html_static_path = ["_static"]
+# html_css_files = ["custom.css"]
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
