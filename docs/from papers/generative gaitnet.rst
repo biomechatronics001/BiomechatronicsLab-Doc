@@ -1,0 +1,142 @@
+Generative GaitNet
+==================
+
+Reference: J. Park, S. Min, P. S. Chang, J. Lee, M. S. Park, and J. Lee, “Generative GaitNet,” in Special Interest Group on Computer Graphics and Interactive Techniques Conference Proceedings, Vancouver BC Canada: ACM, Aug. 2022, pp. 1–9.
+
+GitHub link: https://github.com/namjohn10/GenerativeGaitNet
+
+.. note::
+
+    I tried this code on Linux 18.04 and Python 3.6 as the authors suggested. I used Anaconda to create the virtual environement. See below notes on how to install Anaconda on Linux.
+
+
+Installation (Anaconda)
+-----------------------
+
+* Install Anaconda extended dependencies:
+  
+  .. code-block:: bash
+
+    apt-get install libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6
+
+* Install curl (if not installed already):
+  
+  .. code-block:: bash
+
+    sudo apt install curl
+
+* Download Anaconda for Linux (check filename `here <https://repo.anaconda.com/archive/>`_):
+  
+  .. code-block:: bash
+
+    curl -O https://repo.anaconda.com/archive/Anaconda3-2024.02-1-Linux-x86_64.sh
+
+* Install Anaconda for Linux:
+  
+  .. code-block:: bash
+
+    bash ~/Downloads/Anaconda3-2024.02-1-Linux-x86_64.sh
+  
+* Do not activate conda environment on command prompt startup:
+  
+  .. code-block:: bash
+
+    conda config --set auto_activate_base false
+
+* Manually initialize conda:
+  
+  .. code-block:: bash
+
+    source ~/anaconda3/bin/activate
+    conda init
+    source ~/.bashrc
+
+* Reopen shell and open anaconda (in base environment):
+  
+  .. code-block:: bash
+
+    anaconda-navigator
+
+Installation (Prerequisites)
+----------------------------
+
+* Install pytorch and torchvision
+
+  .. code-block:: bash
+
+    conda install pytorch
+    conda install torchvision
+  
+* Install OpenAI gym
+
+  .. code-block:: bash
+
+    conda install -c powerai gym
+
+* Install pickle5
+
+  .. code-block:: bash
+
+    conda install conda-forge::pickle5
+
+* Install Ray
+
+  .. code-block:: bash
+
+    pip install ray==1.8.0
+    pip install ray[rllib]==1.8.0
+  
+  .. note:: 
+
+    The authors verified the code works on Ray 1.8.0. I tried the latest version of Ray (2.0?) but it seems incompatible with Python 3.6 due to the use of *annotations*.
+
+
+
+Installation (GaitNet)
+----------------------
+
+Follow the instructions in the README.md in the repository.
+
+* Install libraries automatically:
+  
+  .. code-block:: bash
+
+    source ~/.bashrc
+    cd '/path/to/downloaded/folder'
+    sudo bash install.sh
+
+  .. note:: 
+    If you get an error saying cmake is not installed or the version is too low, run this command: ``sudo apt install cmake``.
+
+* Compile:
+
+  .. code-block:: 
+
+    source ~/.bashrc
+    cd '/path/to/downloaded/folder'
+    sudo bash pc_build.sh
+    cd build
+    sudo make -j16
+  
+  .. note:: 
+    Change the number after *j* to the number of cores of your CPU.
+
+* Rendering (with no policy):
+ 
+  .. code-block::
+
+    source ~/.bashrc
+    cd {downloaded folder}/build
+    ./imgui_render/imgui_render ../data/metadata.txt
+
+  .. note:: 
+
+    I ran this part and it looks fine.
+
+    .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/YBSJo4Acv84?si=Gs4mYejnCJgB-Cd6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+
