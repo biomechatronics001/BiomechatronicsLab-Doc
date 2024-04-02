@@ -32,7 +32,7 @@
 
 # sys.path.insert(0, os.path.abspath('../'))
 
-project = 'RL Code'
+project = 'BiomechatronicsLab Documentation'
 copyright = '2024, Junxi'
 author = 'Junxi'
 
@@ -62,7 +62,7 @@ templates_path = ['_templates']
 # -- Options for HTML output
 
 html_theme = 'sphinx_book_theme'
-html_title = "RL Code"
+html_title = "BiomechatronicsLab Documentation"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
