@@ -12,3 +12,4 @@ This page shows the code running progress of the following papers:
     :maxdepth: 1
 
     from papers/generative gaitnet
+    from papers/apple
