@@ -15,7 +15,7 @@ GitHub link: https://github.com/se-hwan/pbrs-humanoid
 Installation
 ------------
 
-* Create the virtual environment using Python 3.6.9 (``user``)
+* Create the virtual environment using Python 3.6.9 (``user`` is your machine username)
   
   .. code-block:: bash
 
