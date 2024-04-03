@@ -15,8 +15,14 @@ GitHub link: https://github.com/se-hwan/pbrs-humanoid
 Installation
 ------------
 
-* Create the virtual environment using Python 3.6.9:
+* Create the virtual environment using Python 3.6.9 (``user``)
   
   .. code-block:: bash
 
-    apt-get install libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6
+    virtualenv /home/user/MITlegged --python=python3
+
+* Activate the virtual environment
+
+  .. code-block:: bash
+      
+    source /home/user/MITlegged/bin/activate
