@@ -20,4 +20,5 @@ asasassa
 
     from papers
     biro lab
+    sensors
     
