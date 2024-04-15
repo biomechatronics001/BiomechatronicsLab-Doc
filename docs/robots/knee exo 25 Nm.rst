@@ -66,6 +66,24 @@ Electrical
     
     ALWAYS press "exit" in the GUI before powering off the motor.
 
+#. One motor seems to activate later than the other motor. | **Source**: Bronx VA, 02/23/2024.
+
+   .. raw:: html
+
+    <iframe width="315" height="560"
+    src="https://www.youtube.com/embed/ejiUhUiGlcg"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;     picture-in-picture; web-share"
+    allowfullscreen></iframe>
+
+
+   **Solution:** This is because the motor CAN communication is not properly initialized. Each time the control box is powered on, please re-upload the control program to Teensy via USB cable so that motor CAN communication is initialized correctly.
+
+#. One motor seems to cause jerky feeling to the subject during walking; one motor is ramping up faster than the other. | **Source**: Bronx VA, 02/23/2024.
+
+   **Solution:** This is because the motor CAN communication is not properly initialized. Each time the control box is powered on, please re-upload the control program to Teensy via USB cable so that motor CAN communication is initialized correctly.
+
 Wearable
 ^^^^^^^^
 
@@ -97,23 +115,6 @@ Controller
 
    **Solution:** ``ToDo``, will have separate control of assistance magnitude during stand-up phase and sit-down phase. Will be implemented in: ``/Dropbox/BiomechatronicsLab/Projects/Knee Osteoarthritis Exoskeleton/Code/Tmotor version - 20240413`` (in progress).
 
-#. Sit2stand controller: one motor seems to activate later than the other motor. | **Source**: Bronx VA, 02/23/2024.
-
-   .. raw:: html
-
-    <iframe width="315" height="560"
-    src="https://www.youtube.com/embed/ejiUhUiGlcg"
-    title="YouTube video player"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;     picture-in-picture; web-share"
-    allowfullscreen></iframe>
-
-
-   **Solution:** ``ToDo``, will meet with Mike from Bronx VA on 04/15 and check the issue.
-
-#. Walking controller: one motor seems to cause jerky feeling to the subject; one motor is ramping up faster than the other. | **Source**: Bronx VA, 02/23/2024.
-
-   **Solution:** ``ToDo``, will meet with Mike from Bronx VA on 04/15 and check the issue.
 
 Miscellaneous
 ^^^^^^^^^^^^^
