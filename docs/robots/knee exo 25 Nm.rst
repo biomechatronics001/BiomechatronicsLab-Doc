@@ -121,7 +121,7 @@ Miscellaneous
 
 #. Bronx VA is not able to download CubeMars tool on their work laptop or personal laptop. Windows Firewall or Chrome treated it as a virus and deleted the file right after it is downloaded. The CubeMars tool is useful for debugging motor issues.
 
-   **Solution:** ``ToDo``, maybe we will mail an USB drive that contains the tool to Bronx VA.
+   **Solution:** Bronx VA managed to install the CubeMars tool on their computer with the help of their IT department. 
 
 
 
