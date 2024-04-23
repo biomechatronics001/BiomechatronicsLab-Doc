@@ -7,4 +7,4 @@ This section shows all the robots being developed in the lab.
     :caption: Contents:
     :maxdepth: 1
 
-    robots/knee exo 25 Nm
+    robots/knee_exo_25Nm
