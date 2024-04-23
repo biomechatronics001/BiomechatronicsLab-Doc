@@ -5,7 +5,7 @@ Welcome to the Biomechatronics Lab Documentation website!
 
 This website hosts the documentation of the projects and codes in the Biomechatronics Lab. It also records the progress of us running the code in reinforcement learning (RL) papers (under ``From papers`` page) as well as implementing our own code (under ``BIRO lab`` page).
 
-asasassa
+asasassa11111222
 
 .. note::
 
@@ -20,6 +20,8 @@ asasassa
 
     from papers
     biro lab
+    paper_reading
     sensors
     robots
+    
     
