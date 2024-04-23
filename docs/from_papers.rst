@@ -11,5 +11,5 @@ This page shows the code running progress of the following papers:
     :caption: Contents:
     :maxdepth: 1
 
-    from_papers/generative gaitnet
+    from_papers/generative_gaitnet
     from_papers/apple
