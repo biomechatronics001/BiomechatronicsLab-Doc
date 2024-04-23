@@ -18,8 +18,8 @@ asasassa11111222
     :caption: Contents:
     :maxdepth: 2
 
-    from papers
-    biro lab
+    from_papers
+    biro_lab
     paper_reading
     sensors
     robots

@@ -7,4 +7,4 @@ Code From BIRO Lab
     :caption: Contents:
     :maxdepth: 1
 
-    biro lab/hip exo RL Nature
+    biro_lab/hip_exo_RL_Nature
