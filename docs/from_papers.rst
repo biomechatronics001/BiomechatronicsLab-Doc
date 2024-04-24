@@ -12,4 +12,4 @@ This page shows the code running progress of the following papers:
     :maxdepth: 1
 
     from_papers/generative_gaitnet
-    from_papers/apple
+    from_papers/PBRS_MIT_Humanoid
