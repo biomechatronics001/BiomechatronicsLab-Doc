@@ -45,4 +45,10 @@ Installation
 
 * Install Isaac Gym
 
+<<<<<<< Updated upstream:docs/from_papers/PBRS_MIT_Humanoid.rst
   1. Download Isaac Gym Preview 4 from https://developer.nvidia.com/isaac-gym (extract the zip package, copy the isaacgym folder in the virtual enviornment directory)
+=======
+  1. Download Isaac Gym Preview 4 from https://developer.nvidia.com/isaac-gym
+  2. Extract the zip package in MITlegged virtual environment folder
+  3. 
+>>>>>>> Stashed changes:docs/from papers/apple.rst
