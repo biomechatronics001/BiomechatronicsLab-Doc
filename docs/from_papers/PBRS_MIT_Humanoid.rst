@@ -84,6 +84,12 @@ Usage
 * Training
 
   ``python gpugym/scripts/train.py --task=pbrs:humanoid``
+    .. Note:: You shold see something like this
+
+      .. image:: /resources/PBRS_MIT_Humanoid/PBRS_MIT_Humanoid_Training.png
+        :align: center
+        :width: 700
+
     * To run on CPU add following arguments: --sim_device=cpu, --rl_device=cpu (sim on CPU and rl on GPU is possible).
     * To run headless (no rendering) add --headless.
     * Important: To improve performance, once the training starts press v to stop the rendering. You can then enable it later to check the progress.
@@ -103,6 +109,12 @@ Usage
 * Implement the trained policy
 
   ``python gpugym/scripts/play.py --task=pbrs:humanoid``
-  
+
+  .. Note:: This is the result
+
+    .. raw:: html
+
+      <iframe width="560" height="315" src="https://youtu.be/4AzTJMkW2ZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
   * By default the loaded policy is the last model of the last run of the experiment folder.
   * Other runs/model iteration can be selected by setting ``load_run`` and ``checkpoint`` in the train config.
