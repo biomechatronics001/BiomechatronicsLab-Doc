@@ -45,4 +45,4 @@ Installation
 
 * Install Isaac Gym
 
-  1. Download Isaac Gym Preview 4 from https://developer.nvidia.com/isaac-gym (extract the zip package, copy the isaacgym folder within the package whereever you want it to live - I prefer in the directory with my virtual enviornment)
+  1. Download Isaac Gym Preview 4 from https://developer.nvidia.com/isaac-gym (extract the zip package, copy the isaacgym folder in the virtual enviornment directory)
