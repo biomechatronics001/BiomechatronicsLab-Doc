@@ -50,7 +50,7 @@ Installation
   3. ``cd isaacgym_lib/python && pip install -e .`` to install the requirements.
   4. Test the installation by running an example: ``cd isaacgym/python/examples && python 1080_balls_of_solitude.py``.
   
-  .. Note:: You sould be able to see a new window apperaing with a group of balls falling
+  .. Note:: You should be able to see a new window apperaing with a group of balls falling
 
     .. image:: /resources/PBRS_MIT_Humanoid/balls_of_solitude.png
       :align: center
@@ -84,7 +84,7 @@ Usage
 * Training
 
   ``python gpugym/scripts/train.py --task=pbrs:humanoid``
-    .. Note:: You shold see something like this
+    .. Note:: You should see something like this
 
       .. image:: /resources/PBRS_MIT_Humanoid/PBRS_MIT_Humanoid_Training.png
         :align: center
