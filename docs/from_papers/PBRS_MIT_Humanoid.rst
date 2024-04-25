@@ -114,7 +114,7 @@ Usage
 
     .. raw:: html
 
-      <iframe width="760" height="315" src="https://www.youtube.com/embed/4AzTJMkW2ZA?si=S1AZSinaISW4-m6Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="700" height="315" src="https://www.youtube.com/embed/4AzTJMkW2ZA?si=S1AZSinaISW4-m6Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
   * By default the loaded policy is the last model of the last run of the experiment folder.
   * Other runs/model iteration can be selected by setting ``load_run`` and ``checkpoint`` in the train config.
